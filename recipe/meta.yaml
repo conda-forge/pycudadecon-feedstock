@@ -1,13 +1,13 @@
 {% set name = "pycudadecon" %}
-{% set version = "0.2.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/tlambert03/pycudadecon/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c18a11c6536832ec4b69dc7ffad28acbc08b76af22df1a231353e05e429a6ff8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 5c05a485f5538c57fa266fe2397d0886fd8801d9d26b63e743902656e4d73947
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - numpy
-    - cudadecon >=0.0.11
+    - cudadecon >=0.0.11,!=0.6.0
     - tifffile >=0.14.0
     - typing_extensions
 
@@ -40,7 +40,7 @@ about:
     a CUDA/C++ implementation of an accelerated Richardson Lucy Deconvolution algorithm.
     It is suitable for general deconvolution of 3D microscopy data, but also has functionality
     for stage-scanning light sheet applications such as Lattice Light Sheet.
-  doc_url: https://pycudadecon.readthedocs.io/
+  doc_url: https://www.talleylambert.com/pycudadecon/
   dev_url: https://github.com/tlambert03/pycudadecon
 
 extra:
