@@ -11,7 +11,7 @@ Summary: Python wrapper for cudaDecon - GPU accelerated 3D deconvolution for mic
 
 Development: https://github.com/tlambert03/pycudadecon
 
-Documentation: https://pycudadecon.readthedocs.io/
+Documentation: https://www.talleylambert.com/pycudadecon/
 
 This package provides a python wrapper and convenience functions for cudadecon,
 a CUDA/C++ implementation of an accelerated Richardson Lucy Deconvolution algorithm.
